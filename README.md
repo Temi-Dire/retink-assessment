@@ -1,27 +1,58 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Landing Page Project
 
-Currently, two official plugins are available:
+This repository contains a landing page project created using React, TypeScript, Vite, Framer Motion, and Material-UI. The landing page includes a navigation bar, a sidebar, and a card component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Demo
 
-- Configure the top-level `parserOptions` property like this:
+You can see a live demo of the landing page at [Demo Link](insert_demo_link_here).
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Navigation Bar**: A responsive navigation bar with navigation links and a user menu.
+- **Sidebar**: A sidebar component for navigation and user interactions.
+- **Card Component**: A card component used to display information or content.
+- **Framer Motion**: Animated hover effects on buttons to provide a visually appealing user experience.
+- **Material-UI**: Integration of Material-UI for icons and user interface components.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Temi-Dire/Retink.git
+
+2. Navigate to the project directory
+   cd landing-page-project
+
+3. Install the project dependencies using your package manager
+   npm install or
+   yarn install
+
+## Usage
+
+   Start the development server
+
+   npm run dev or
+   yarn dev
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository.
+2. 2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure that the project builds without errors.
+4. Commit your changes with clear and concise commit messages.
+5. Push your branch to your fork.
+6. Submit a pull request with a detailed description of your changes.
