@@ -2,6 +2,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneOutlinedIcon from "@mui/icons-material/TuneOutlined";
+import CancelIcon from "@mui/icons-material/Cancel";
 import { motion as m } from "framer-motion";
 
 const Navbarlg = () => {
@@ -16,7 +17,10 @@ const Navbarlg = () => {
               type="text"
               placeholder="Search for templates, projects, etc"
             />
-            <TuneOutlinedIcon style={{ color: "#DBDBDB" }} />
+            <div className="flex gap-2">
+              <TuneOutlinedIcon style={{ color: "#DBDBDB" }} />
+              <CancelIcon style={{ color: "#DBDBDB" }} />
+            </div>
           </div>
           <div className="flex gap-4">
             <m.button
