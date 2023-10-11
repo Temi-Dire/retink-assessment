@@ -3,18 +3,12 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useState } from "react";
-import { motion as m } from "framer-motion";
 
 const Sidebar = () => {
   const [activeIcon, setActiveIcon] = useState<String>("");
 
   const style = {
     fontSize: "2rem",
-    // color: "#4D4959",
-  };
-
-  const iconStyleOnHover = {
-    color: "#53EEBA", // Change to your desired hover color
   };
 
   return (
