@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { auth } from "../../../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -24,9 +26,14 @@ const Login = () => {
     },
   };
 
-  const handleSignup = () => {
-    console.log("Email:", email);
-    console.log("Password:", password);
+  const handleSignUp = () => {
+    createUserWithEmailAndPassword(auth, email, password).then(
+      (userCredential) => {
+        if (userCredential) {
+          navigate("/");
+        }
+      }
+    );
   };
 
   return (
@@ -70,7 +77,7 @@ const Login = () => {
               <button
                 type="button"
                 className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
-                onClick={handleSignup}
+                onClick={handleSignUp}
               >
                 Sign Up
               </button>
