@@ -53,7 +53,7 @@ const Sidebar = () => {
               className="cursor-pointer"
               onClick={() => {
                 setActiveIcon("icon2");
-                navigate("/");
+                navigate("/schedule");
               }}
             />
           </div>
