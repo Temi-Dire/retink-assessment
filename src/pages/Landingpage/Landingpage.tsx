@@ -26,14 +26,14 @@ const Landingpage = () => {
 
   return (
     <>
-      <m.div
-        variants={pageAnimation}
-        initial="hidden"
-        animate="visible"
-        className="flex"
-      >
+      <div>
         <Sidebar />
-        <div className="relative flex-1 lg:ml-[7.5rem]">
+        <m.div
+          variants={pageAnimation}
+          initial="hidden"
+          animate="visible"
+          className="relative flex-1 lg:ml-[7.5rem]"
+        >
           <Navbarlg />
           <div className="bg-purple-100 rounded-b-3xl pt-4 pb-20 px-7 lg:rounded-3xl lg:pb-10 lg:mr-2">
             <Navbar />
@@ -172,8 +172,8 @@ const Landingpage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </m.div>
+        </m.div>
+      </div>
     </>
   );
 };

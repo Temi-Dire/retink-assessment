@@ -3,9 +3,12 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const [activeIcon, setActiveIcon] = useState<String>("");
+  const [activeIcon, setActiveIcon] = useState<String>("icon1");
+
+  const navigate = useNavigate();
 
   const style = {
     fontSize: "2rem",
@@ -29,7 +32,10 @@ const Sidebar = () => {
                 color: activeIcon === "icon1" ? "#5E3EBA" : "#4D4959",
               }}
               className="cursor-pointer"
-              onClick={() => setActiveIcon("icon1")}
+              onClick={() => {
+                setActiveIcon("icon1");
+                navigate("/");
+              }}
             />
           </div>
           <div
@@ -45,7 +51,10 @@ const Sidebar = () => {
                 color: activeIcon === "icon2" ? "#5E3EBA" : "#4D4959",
               }}
               className="cursor-pointer"
-              onClick={() => setActiveIcon("icon2")}
+              onClick={() => {
+                setActiveIcon("icon2");
+                navigate("/");
+              }}
             />
           </div>
           {/* <Home className="w-20 h-20" /> */}
@@ -66,7 +75,10 @@ const Sidebar = () => {
                 color: activeIcon === "icon3" ? "#5E3EBA" : "#4D4959",
               }}
               className="cursor-pointer"
-              onClick={() => setActiveIcon("icon3")}
+              onClick={() => {
+                setActiveIcon("icon3");
+                navigate("/settings");
+              }}
             />
           </div>
           <div

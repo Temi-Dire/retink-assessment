@@ -4,8 +4,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import TuneOutlinedIcon from "@mui/icons-material/TuneOutlined";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { motion as m } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Navbarlg = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="hidden lg:flex justify-between mb-4 sticky top-0 ">
@@ -46,6 +49,7 @@ const Navbarlg = () => {
             src="/img/profile.png"
             alt="Profile Image"
             className="cursor-pointer"
+            onClick={() => navigate("/login")}
           />
         </div>
       </div>
